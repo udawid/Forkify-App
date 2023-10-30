@@ -11,7 +11,7 @@ const recipeContainer = document.querySelector('.recipe');
 
 ///////////////////////////////////////
 
-const constrolRecipes = async function () {
+const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
 
@@ -27,8 +27,8 @@ const constrolRecipes = async function () {
     alert(err);
   }
 };
-['hashchange', 'load'].forEach(ev =>
-  window.addEventListener(ev, constrolRecipes)
-);
-window.addEventListener('hashchange', constrolRecipes);
-window.addEventListener('load', constrolRecipes);
+
+const init = function () {
+  recipeView.addHandlerRender(controlRecipes);
+};
+init();
