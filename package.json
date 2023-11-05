@@ -18,12 +18,14 @@
   },
   "homepage": "https://github.com/udawid/Forkify-App#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.1",
-    "parcel": "^2.10.1"
+    "@parcel/transformer-sass": "^2.10.2",
+    "parcel": "^2.10.1",
+    "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
     "core-js": "^3.33.1",
     "fractional": "^1.0.0",
+    "img": "^3.0.3",
     "regenerator-runtime": "^0.14.0"
   }
 }
